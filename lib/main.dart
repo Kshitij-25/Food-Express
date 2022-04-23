@@ -76,19 +76,18 @@ class _MyAppState extends State<MyApp> {
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-              body1: TextStyle(
+              bodyText1: TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
-              body2: TextStyle(
+              bodyText2: TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
-              title: TextStyle(
+              subtitle1: TextStyle(
                   fontSize: 20,
                   fontFamily: 'RobotoCondensed',
                   fontWeight: FontWeight.bold),
             ),
       ),
-      // home: HomePage(),
       routes: {
         '/': (ctx) => HomePage(_favoriteMeals),
         CategoriesMealsScreen.routeName: (ctx) =>
@@ -97,9 +96,6 @@ class _MyAppState extends State<MyApp> {
             MealDetailScreen(_toggleFavorite, _isMealFavorite),
         SettingsScreen.routName: (ctx) => SettingsScreen(_filters, _setFilters),
       },
-      // onGenerateRoute: (settings) {
-      //   return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
-      // },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(builder: (ctx) => CategoriesScreen());
       },

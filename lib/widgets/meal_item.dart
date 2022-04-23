@@ -55,14 +55,10 @@ class MealItem extends StatelessWidget {
   void selectMeal(BuildContext context) {
     Navigator.of(context)
         .pushNamed(
-      MealDetailScreen.routeName,
-      arguments: id,
-    )
-        .then((result) {
-      // if (result != null) {
-      //   removeItem(result);
-      // }
-    });
+          MealDetailScreen.routeName,
+          arguments: id,
+        )
+        .then((result) {});
   }
 
   @override

@@ -12,7 +12,7 @@ class MealDetailScreen extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 10),
       child: Text(
         text,
-        style: Theme.of(context).textTheme.title,
+        style: Theme.of(context).textTheme.headline6,
       ),
     );
   }
@@ -84,12 +84,6 @@ class MealDetailScreen extends StatelessWidget {
           ],
         ),
       ),
-      // floatingActionButton: FloatingActionButton(
-      //   child: Icon(Icons.delete),
-      //   onPressed: () {
-      //     Navigator.of(context).pop(mealId);
-      //   },
-      // ),
       floatingActionButton: FloatingActionButton(
         child: Icon(
             isMealFavorite(mealId) ? Icons.favorite : Icons.favorite_border),

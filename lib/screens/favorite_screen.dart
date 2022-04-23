@@ -21,7 +21,6 @@ class FavoriteScreen extends StatelessWidget {
             duration: favoriteMeals[index].duration,
             complexity: favoriteMeals[index].complexity,
             affordability: favoriteMeals[index].affordability,
-            // removeItem: _removeMeal,
           );
         },
         itemCount: favoriteMeals.length,
